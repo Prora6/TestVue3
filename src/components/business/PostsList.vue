@@ -11,12 +11,12 @@
         <label for="exampleTextarea" class="form-label">Текст поста</label>
         <textarea class="form-control" id="exampleTextarea" v-model="newPostBody" placeholder="Введи текст"></textarea>
       </div>
-      <button type="button" class="btn btn-primary" @click="handleCreatePost">Добавить пост</button>
+      <button type="button" class="btn btn-primary mt-3" @click="handleCreatePost">Добавить пост</button>
     </div>
 
     <h3>Созданные посты</h3>
     <ul class="posts-list">
-      <li v-for="post in posts" :key="post.id" class="mb-3 p-2 border border-primary">
+      <li v-for="post in posts" :key="post.id" class="mb-3 p-2 border rounded-4 border-primary">
         <div class="flex-column mb-3">
           <label :for="`postTitleInput-${post.id}`" class="form-label w-100 text-start">Название поста</label>
           <div class="d-flex">

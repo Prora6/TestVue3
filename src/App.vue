@@ -1,15 +1,18 @@
 <template>
   <Header/>
   <router-view />
+  <Footer/>
 </template>
 
 <script>
 import Header from "@/components/layout/header/index.vue";
+import Footer from "@/components/layout/footer/index.vue";
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Footer
   }
 }
 </script>
@@ -23,7 +26,9 @@ export default {
   padding: 0;
   margin: 0;
   background-color: #E1DEFF;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 li {
   list-style-type: none;
