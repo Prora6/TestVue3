@@ -1,5 +1,7 @@
 # test
 
+## recommended version node.js v16.20.2
+
 ## Project setup
 ```
 npm install
